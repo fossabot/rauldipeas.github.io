@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Raul Dipeas</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript>
+    <link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="icon" href="assets/images/avataaars-alt.png" type="image/png">
+  <meta name="ocs-site-verification" content="6830917d3539d170575f1faad169bc2f" />
+</head>
+
+<body class="is-preload" style="background: #000">
+  <div id="wrapper">
+    <div style="z-index: -99;">
+      <img src="assets/images/giphy.gif" class="animated-background">
+    </div>
+    <div id="main">
+
+      <!-- Header -->
+      <header id="header">
+        <img class="mySlides" src="assets/images/avataaars-alt.png" width="256px" style="margin: auto">
+        <img class="mySlides" src="assets/images/avataaars-alt-1.png" width="256px" style="margin: auto">
+        <img class="mySlides" src="assets/images/avataaars-alt-2.png" width="256px" style="margin: auto">
+        <img class="mySlides" src="assets/images/avataaars-alt-3.png" width="256px" style="margin: auto">
+        <script type="text/javascript">
+          var slideIndex = 0;
+          carousel();
+
+          function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > x.length) {
+              slideIndex = 1
+            }
+            x[slideIndex - 1].style.display = "block";
+            setTimeout(carousel, 1000); // Change image every 1 seconds
+          }
+        </script>
+        <h1>Raul Dipeas</h1>
+        <p>Técnico em informática &nbsp;&bull;&nbsp; Músico &nbsp;&bull;&nbsp; Cinéfilo</p>
+        <nav>
+          <ul>
+            <li><a href="https://rauldipeas.github.io/blog" class="fa fa-blog"><span class="label">Blog</span></a></li>
+            <li><a href="https://paper.dropbox.com/doc/Cursos-Raul-Dipeas-2SiXCwUNiA8BPz5OO2YdX" class="fa fa-graduation-cap" target="_blank"><span class="label">Cursos</span></a></li>
+            <li><a href="https://bandlab.com/rauldipeas" class="fa fa-music" target="_blank"><span class="label">Bandlab</span></a></li>
+            <li><a href="https://trakt.tv/users/rauldipeas" class="fa fa-film" target="_blank"><span class="label">Trakt</span></a></li>
+            <li><a href="https://instagram.com/raul_dipeas" class="fab fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+            <li><a href="https://twitter.com/rauldipeas" class="fab fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+            <!--<li class="skype-button" data-contact-id="rauldipeas"><a class="fab fa-skype" target="_blank"><span class="label">Skype</span></a></li>-->
+          </ul>
+        </nav>
+      </header>
+    </div>
+  </div>
+  <div class="float">
+    <a href="https://discord.com/users/206285841172004864" target="_blank"><img src="assets/images/discord.png" class="float" title="Fale comigo no Discord..."></a>
+  </div>
+  <script>
+    window.onload = function() {
+      document.body.classList.remove('is-preload');
+    }
+    window.ontouchmove = function() {
+      return false;
+    }
+    window.onorientationchange = function() {
+      document.body.scrollTop = 0;
+    }
+  </script>
+  <!--<script src="https://swc.cdn.skype.com/sdk/v1/sdk.min.js"></script>-->
+  <!-- Load Facebook SDK for JavaScript -->
+  <!--<div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        xfbml            : true,
+        version          : 'v6.0'
+      });
+    };
+
+    (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/pt_BR/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>-->
+
+  <!-- Your customer chat code -->
+  <!--<div class="fb-customerchat"
+    attribution=setup_tool
+    page_id="100113718305981"
+    greeting_dialog_display="hide"
+    logged_in_greeting="Em que posso te ajudar?"
+    logged_out_greeting="Em que posso te ajudar?">
+  </div>-->
+  <!-- Chatra {literal} -->
+  <!--<script>
+    (function(d, w, c) {
+        w.ChatraID = 'JrmpvQWRyJiT2C5fL';
+        var s = d.createElement('script');
+        w[c] = w[c] || function() {
+            (w[c].q = w[c].q || []).push(arguments);
+        };
+        s.async = true;
+        s.src = 'https://call.chatra.io/chatra.js';
+        if (d.head) d.head.appendChild(s);
+    })(document, window, 'Chatra');
+  </script>-->
+  <!-- /Chatra {/literal} -->
+  <!-- Chatra widget code -->
+  <!--<script>
+  window.ChatraSetup = {
+      colors: {
+          buttonText: '#fff', /* chat button text color */
+          buttonBg: '#477489'    /* chat button background color */
+      }
+  };
+  </script>-->
+</body>
+</html>
